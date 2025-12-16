@@ -7,17 +7,63 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## 🚀 Deployment to Coolify
+
+This Laravel Livewire application is ready to be deployed to VPS using Coolify. All necessary Docker configurations are included.
+
+### Quick Start
+
+1. **Push to Git Repository**
+
+    ```bash
+    git add .
+    git commit -m "Ready for deployment"
+    git push origin main
+    ```
+
+2. **Deploy to Coolify**
+
+    - Login to your Coolify dashboard
+    - Create new Application
+    - Select your Git repository
+    - Choose "Dockerfile" as build pack
+    - Configure environment variables (see `DEPLOYMENT.md`)
+    - Click Deploy!
+
+3. **Detailed Instructions**
+    - See [DEPLOYMENT.md](DEPLOYMENT.md) for complete deployment guide
+    - Or run `/deploy-to-coolify` workflow
+
+### What's Included
+
+-   ✅ **Dockerfile** - Production-ready PHP 8.2 + Nginx + Supervisor
+-   ✅ **Nginx Configuration** - Optimized for Laravel
+-   ✅ **Supervisor Configuration** - PHP-FPM, Nginx, and Queue Workers
+-   ✅ **Docker Compose** - For local testing
+-   ✅ **Deployment Guide** - Step-by-step instructions in Indonesian
+
+### Local Testing
+
+Test the Docker setup locally before deploying:
+
+```bash
+docker-compose up -d
+# Access at http://localhost:8080
+```
+
+---
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -33,14 +79,14 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+-   **[Vehikl](https://vehikl.com)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+-   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+-   **[Redberry](https://redberry.international/laravel-development)**
+-   **[Active Logic](https://activelogic.com)**
 
 ## Contributing
 
