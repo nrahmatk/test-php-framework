@@ -30,7 +30,16 @@ if [ ! -z "$DB_HOST" ]; then
     fi
 fi
 
-# Set correct permissions first
+# Create necessary directories and files
+echo "Creating necessary directories and files..."
+mkdir -p /var/www/html/storage/logs
+mkdir -p /var/www/html/storage/framework/{cache,sessions,views}
+mkdir -p /var/www/html/bootstrap/cache
+
+# Create log file if it doesn't exist
+touch /var/www/html/storage/logs/laravel.log
+
+# Set correct permissions
 echo "Setting permissions..."
 chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
