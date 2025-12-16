@@ -36,7 +36,7 @@ This Laravel Livewire application is ready to be deployed to VPS using Coolify. 
 
 ### What's Included
 
--   ✅ **Dockerfile** - Production-ready PHP 8.2 + Nginx + Supervisor
+-   ✅ **Dockerfile** - Production-ready PHP 8.4 + Nginx + Supervisor
 -   ✅ **Nginx Configuration** - Optimized for Laravel
 -   ✅ **Supervisor Configuration** - PHP-FPM, Nginx, and Queue Workers
 -   ✅ **Docker Compose** - For local testing
