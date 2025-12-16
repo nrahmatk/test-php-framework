@@ -1,5 +1,5 @@
 # Multi-stage build untuk optimasi size
-FROM composer:2.7 AS composer-build
+FROM composer:2.8 AS composer-build
 
 WORKDIR /app
 
@@ -40,7 +40,7 @@ COPY --from=composer-build /app/vendor ./vendor
 RUN npm run build
 
 # Final stage - PHP dengan Nginx dan Supervisor
-FROM php:8.2-fpm-alpine
+FROM php:8.4-fpm-alpine
 
 # Install system dependencies
 RUN apk add --no-cache \
