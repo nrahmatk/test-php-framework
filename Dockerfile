@@ -58,6 +58,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 3009
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
