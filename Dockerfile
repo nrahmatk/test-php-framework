@@ -29,8 +29,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install npm dependencies
-RUN npm ci
+# Install npm dependencies (use install if package-lock.json doesn't exist)
+RUN npm install --no-audit --no-fund
 
 # Copy application code dan vite config
 COPY . .
